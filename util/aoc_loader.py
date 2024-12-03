@@ -30,7 +30,7 @@ class AocLoader:
         input_file_path = os.path.abspath(input_file_path)
         if os.path.exists(input_file_path):
             with open(input_file_path, "r") as file:
-                print("load static")
+                print("Loading saved file...")
                 return file.read()
         else:
             return self.download()
